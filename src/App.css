@@ -1,38 +1,68 @@
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  grid-template-columns: repeat(3, auto);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 60vh;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.brand-card {
+  border-radius: 8px;
+  height: 70vh;
+  width: 60vw;
+  position: relative;
+}
+
+.btn {
+border-radius: 1.2rem;
+border-style: none;
+width: 50%;
+padding: 0.60rem;
+margin: 16px 0;
+position: absolute;
+bottom: 10%;
+}
+
+.btn:first-child{
+  color: hsl(31, 88%, 53%);
+}
+
+.brand-card:first-child{
+  background: hsl(31, 88%, 53%);
+  padding: 1rem;
+}
+.brand-card:last-child{
+  background: hsl(179, 100%, 13%);
+  padding: 0.88rem;
+}
+.brand-card:nth-last-child(2){
+  background: hsl(184, 100%, 22%);
+  padding: 1rem;
+}
+.App:nth-child(1){
+  background: hsl(0, 0%, 100%);
+}
+
+.brandinfo{
+  margin-top: 20px;
+  padding-right: 0.88rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.brandtitle{
+  font-size: 14px;
+  margin-top: 1.4rem;
+  color: white;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.brandlogo{
+  margin-top: 1.2rem
 }
